@@ -112,6 +112,20 @@ nav#navigation {
     font-size: 60px
 }
 
-.witi {
-    background-color: var(--bg-color);
+
+.wcwd {
+    padding-left: 165px;
+}
+
+.subtitle {
+    padding-top: 7px;
+}
+
+.witih4 {
+    padding-top: 20px;
+}
+
+.witiimg {
+    border-radius: 25px;
+    size: 20px
 }
