@@ -29,6 +29,9 @@
         <!--put main google font here-->
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+        <link href="js/script.js" rel="script">
+        
+
 
 
     </head>
@@ -68,15 +71,59 @@
             <div class="row">
                 <h2>What Can We Do?</h2>
                 <div class="subtitle"><h4>There are many things we can do about the current climate situation, to have a future for ourselves and the future generations.</h4></div>
+                <button class="accordion">Contact your local parliament/representative</button>
+                <div class="panel">
+                <h4>Contacting your local area representative, whilst it seems like they may not listen, there is a chance they will listen, especially if it may concern issues with the area he/she represents, and once they take that into account, it becomes easier for that information to run up the chain, and reach higher levels of government, giving our country a chance to have a future better than we have today.<h4>
+                </div>
+
+                <button class="accordion">Use alternatives to meat products, and more sustainable produce</button>
+                <div class="panel">
+                <h4>One of the main contributors to climate change is the agriculture industry, specifically the livestock industry, and the growing of food for that. Majority of grains grown go to feeding livestock, with the demand for it rapidly increasing, causing forests to be chopped down, and the inevitable release of carbon dioxide, methane and nitrous oxide into the atmosphere, contributing further to global warming. If we switch to plant based alternatives, which use less land, less water, and cause less destruction and gas release into the environment, we will be able to make a sizeable contribution to fixing our environment.<h4>
+                </div>
+
+                <button class="accordion">Use other transport methods</button>
+                <div class="panel">
+                <h4>Cars, specifically petrol and diesel cars can also produce a lot of pollution, as well as the oil spills caused by the higher demand of fossil fuels for transport use. Switching to other transportation methods, such as electric cars, or riding a bicycle or even walking, can be better for the environment than diesel and petrol cars, even though one car may not make much of a difference, if multiple people follow the idea, we will be able to lower carbon dioxide emissions into our atmosphere. Public transport, such as trains, and sometimes even buses can be viable alternatives, with the amount of people traveled compared to the greenhouse gases emitted, it can make a sizeable difference compared to everybody driving a car.<h4>
+                </div>
             </div>
         </div>
     </section>
+    <section class="author">
+        <h2>About the <link>Author</link></h2>
+        <div class="author-info">
+          <img src="img/profile.jpg" alt="Author Image">
+          <div class="author-details">
+            <h3><link>Hayden Smith</link></h3>
+            <h5>The author of this page is Hayden Smith, a student in year 9, who created this webpage for a school project</h5>
+          </div>
+        </div>
+      </section>
     <section id="amta" class="amta">
         <div class="container">
             <div class="row">
                 <h2>A Message To Albanese</h2>
+                <h4>To close off this page, I have a message to the current Prime Minister of Australia, Mr. Anthony Albanese:</h4>
+                <h4></h4>
+                <h4>Our country, is a beautiful country, with long beaches, spanning the entire coastline, if we continue the way we are going, those beaches will be completely underwater, from the melting icebergs as a side effect of global warming. It doesn't just stop at the beaches, we have wonderful wildlife, and have hundreds, if not thousands of native species, of which will begin to die out due to less food sources, think of the koalas, kangaroos, emus, echidnas, and all the other unique Australian animals, that once gone, will never come back. With the heat from global warming, our plants will start to die, our banana plantations, our sugar cane fields, even though it is a few degrees of difference, that is all that is needed for them to wither up and die, causing famines, as well as the food chain to collapse, ending our society as we would know it. Plants have evolved to fit the specific conditions over thousands of millions of years, but if the temperature changes drastically over a short amount of time, they will not be able to evolve fast enough to survive. The book "Project Hail Mary" is a good example of the effects of heat on our planet, even though the temperatures will only drop 10% due to the astrophage eating the suns energy, all plants will die, causing the world to go into famine, and struggle for societies to survive. My point here is, if we do not do something about the situation, now, and not leave it for future generations to sort out, for then it will be too late.</h4>
             </div>
         </div>
     </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
     </body>
 </html>
